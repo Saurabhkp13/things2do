@@ -32,6 +32,13 @@ jobs:
   with:
     # jmeter test plan to execute
     test-plan-path: './Product-filters.jmx'
+    
+    args: ""
+- name: Upload Results
+  uses: actions/upload-artifact@v2
+  with:
+    name: jmeter-results
+    path: result.jtl
  
 
    
